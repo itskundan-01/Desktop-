@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=CodeTantra SEA
+Exec="/opt/CodeTantra SEA/codetantra-sea" %U
+Terminal=false
+Type=Application
+Icon=codetantra-sea
+StartupWMClass=CodeTantra SEA
+exec=codetantra-sea %u
+Comment=CodeTantra Secure Exam Application
+MimeType=x-scheme-handler/codetantra;x-scheme-handler/codetantra;
+Categories=Education;

@@ -1,0 +1,164 @@
+/* CSS for the About Page */
+body {
+    background-color: #eff4e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+    width: 5%;
+    margin-right: 20px;
+}
+
+.header-text {
+    margin-left: 32%;
+    margin-top: -0.4%;
+    margin-bottom: -1%;
+    text-align: center;
+}
+
+.search{
+    
+    display: flex;
+}
+.search{
+    margin-left: 280px ;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline:#f70000;
+}
+
+button[type="submit"] {
+    background-color: #3d77b6;
+    color: #fff;
+    margin-left: 1.5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+
+nav {
+    text-size-adjust: 100px;
+        padding-top:1.5%;
+        padding-bottom: 0.009%;
+        background-color: #6a4141;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section#webseries {
+    padding: 20px;
+    text-align: center;
+}
+
+
+a {
+    color: crimson;
+    text-decoration: none;
+  }
+  
+
+
+
+
+
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 0;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+.footer-bottom {
+    background-color: #222; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+.footer-bottom #name{
+    font-size: 15px;
+    color: #ff0202;
+    text-shadow: #000000 2px 2px 2px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
