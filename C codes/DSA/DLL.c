@@ -203,7 +203,7 @@ void display(){
     else{
         p = head;
         while(p!=NULL){                     // out-putting first to last data
-            printf("%d--> ",p->data);
+            printf("%d<--> ",p->data);
             p = p->next;
         }
         printf("NULL\n");
@@ -239,7 +239,7 @@ void reverse(){
         p=p->next;
     printf("\n\nThe reversed Linked List is: NULL");
     while(p!=NULL){                 //cuz it is DLL and it has prev with head's prev NULL
-        printf(" <--%d",p->data);
+        printf(" <-->%d",p->data);
         p=p->prev;
     }
 
