@@ -1,5 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+int stack[50];
+int top=-1;
+
 struct node{
     int data;
     struct node* next;
@@ -14,6 +18,7 @@ void deleteatend();
 void lengthprint();
 void display();
 void swapnodes();
+void reverse();
 int main(){
     int ch;
     while(1)
@@ -43,6 +48,8 @@ int main(){
                     break;
             case 10: printf("\n\nThankyou !!"); 
                     return 0;
+            case 11: reverse();
+            break;
             default: printf("INVALID CHOICE ! , Please Try Again...\n");
         }
     
@@ -218,22 +225,42 @@ void swapnodes(){
     struct node* s;
     p = head;
     q = head;
-    for(int i=1;i<f;i++){
-        o = p;
+    for(int i=1;i<f;i++)
+    {
+        o=p;
         p = p->next;
-        r = p->next;
     }
-    for(int i=1;i<l;i++){
-        s = q;
+    for(int i=1;i<l;i++)
+    {
+        s=q;
         q = q->next;
     }
     
     p->next = q->next;
-    q->next = r;
-    o->next = s->next;
-    s->next = p;
+    q->next = p;
+    o->next = q;
     
     display();
-    
-    
+}
+
+
+void reverse(){
+    if(head==NULL) printf("\n\nLinked List is Empty\n\n");
+    else{
+        top=-1;
+    p=head;
+    while(p!=NULL){
+        top++;
+        stack[top] = p->data;
+        p = p->next;
+    }
+    printf("\n\nThe Reversed Linked List is: \n");
+    p=head;
+    while(p!=NULL){
+        p->data = stack[top];
+    printf(" %d\n",stack[top]);
+    top--;
+    p = p->next;
+    }
+}
 }
